@@ -1,0 +1,183 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ]
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+
+      <h1>
+        Contact the NHS
+      </h1>
+
+      <div class="nhsuk-expander-group">
+        <details class="nhsuk-details nhsuk-expander">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              Get help in an emergency or urgent situation
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <h3 class="nhsuk-heading-s">If you think it's a life threatening emergency</h3>
+            <a href="#">Go to A&E</a>
+            <p>Find your nearest emergency department</p>
+            <a href="#">Call 999</a>
+            <p>999 is the emergency number for people in the UK</p>
+
+            <h3 class="nhsuk-heading-s nhsuk-u-margin-top-4">If you need urgent help but you're not sure what to do</h3>
+            <a href="#">111 online</a>
+            <p>[Find a description for this]</p>
+            <a href="#">Call 111</a>
+            <p>[Find a description for this]</p>
+
+          </div>
+        </details>
+
+        <details class="nhsuk-details nhsuk-expander">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              Get help with a medical problem
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <h3 class="nhsuk-heading-s">Start with</h3>
+            <a href="#">NHS.UK Health A to Z</a>
+            <p>Information on conditions, symptoms and treatments</p>
+
+            <h3 class="nhsuk-heading-snhsuk-u-margin-top-4">If you need to talk to someone</h3>
+
+            <a href="#">Talk to a pharmacist</a>
+            <p>Speak to a pharmacist for advice on medicines or common problems like coughs, colds and rashes</p>
+
+            <a href="#">Talk to your GP or dentist</a>
+            <p>[Placeholder]</p>
+
+          </div>
+        </details>
+
+        <details class="nhsuk-details nhsuk-expander">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              Book or manage an appointment
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            {{ radios({
+              "idPrefix": "example",
+              "name": "example",
+              "fieldset": {
+                "legend": {
+                  "text": "What kind of service is the appointment for?"
+                }
+              },
+              "items": [
+                {
+                  "value": "GP",
+                  "text": "GP"
+                },
+                {
+                  "value": "Dentist",
+                  "text": "Dentist"
+                },
+                {
+                  "value": "Hospital or clinic",
+                  "text": "Hospital or clinic"
+                }
+              ]
+            }) }}
+
+            {{ button({
+              "text": "Continue",
+              "classes": "nhsuk-button--secondary"
+            }) }}
+          </div>
+        </details>
+
+        <details class="nhsuk-details nhsuk-expander">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              Access medical records
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <p>Placeholder</p>
+          </div>
+        </details>
+
+        <details class="nhsuk-details nhsuk-expander">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              Using the NHS: rights, costs, benefits and exemptions
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <p>Placeholder</p>
+          </div>
+        </details>
+
+        <details class="nhsuk-details nhsuk-expander">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              Contact an NHS organisation
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <p>Placeholder</p>
+          </div>
+        </details>
+
+        <details class="nhsuk-details nhsuk-expander">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              Provide feedback or complain
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <p>Placeholder</p>
+          </div>
+        </details>
+
+        <details class="nhsuk-details nhsuk-expander">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              Something about the NHS.UK website
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <p>Placeholder</p>
+          </div>
+        </details>
+
+      </div>
+
+    </div>
+  </div>
+{% endblock %}

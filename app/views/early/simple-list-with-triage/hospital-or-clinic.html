@@ -1,0 +1,55 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    },
+    {
+      href: "/early/simple-list-with-triage/contact",
+      text: "Contact the NHS"
+    }
+  ]
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="input-width-10">
+          <h1>In which hospital or clinic is your appointment?</h1>
+        </label>
+        <input class="nhsuk-input" id="input-width-10" name="test-width-10" type="text">
+      </div>
+
+      <details class="nhsuk-details nhsuk-u-margin-top-6">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            I don't know
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>This is a placeholder, but a scenario to consider</p>
+        </div>
+      </details>
+
+      <button class="nhsuk-button nhsuk-u-margin-top-4" type="submit">
+        Continue
+      </button>
+
+    </div>
+  </div>
+{% endblock %}

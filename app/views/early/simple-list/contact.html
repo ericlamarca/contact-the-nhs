@@ -1,0 +1,153 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ]
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+
+      <h1>
+        Contact the NHS
+      </h1>
+
+      <div class="nhsuk-panel">
+        <h2>Get help in an emergency or urgent situation</h2>
+        
+        <h3 class="nhsuk-u-margin-top-6">If you think it's a life threatening emergency</h3>
+        <h4 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">Go to A&E</a></h4>
+        <p>Find your nearest emergency department</p>
+        <h4 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">Call 999</a></h4>
+        <p>999 is the emergency number for people in the UK</p>
+
+        <h3 class="nhsuk-u-margin-top-6">If you need urgent help but you're not sure what to do</h3>
+        <h4 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">111 online</a></h4>
+        <p>[Find a description for this]</p>
+        <h4 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">Call 111</a></h4>
+        <p>[Find a description for this]</p>
+      </div>
+
+      <div class="nhsuk-panel">
+        <h2>Get help with a medical problem</h3>
+
+        <h3 class="nhsuk-u-margin-top-6">Start with</h3>
+        <h4 class="nhsuk-u-margin-bottom-2 nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">NHS.UK Health A to Z</a></h3>
+        <p>Information on conditions, symptoms and treatments</p>
+
+        <h3 class="nhsuk-u-margin-top-6">If you need to talk to someone</h3>
+
+        <h3 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">Talk to a pharmacist</a></h3>
+        <p>Speak to a pharmacist for advice on medicines or common problems like coughs, colds and rashes</p>
+
+        <h3 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">Talk to your GP or dentist</a></h3>
+        <p>[Placeholder]</p>
+      </div>
+
+      <div class="nhsuk-panel">
+        <h2>Book and manage an appointment</h3>
+
+        <h3 class="nhsuk-u-margin-top-6 nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">NHS e-Referral Service</a></h3>
+        <p>If you have been referred to a hospital or clinic through the e-Referral service</p>
+
+        <h3 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">All other hospitals and clinics</a></h3>
+        <p>[Placeholder]</p>
+
+        <h3 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">GPs and dentists</a></h3>
+        <p>[Placeholder]</p>
+      </div>
+
+      <div class="nhsuk-panel">
+        <h2>Access medical records</h3>
+
+        <h3 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">[Placeholder]</a></h3>
+        <p>[Placeholder]</p>
+
+        <h3 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">[Placeholder]</a></h3>
+        <p>[Placeholder]</p>
+
+
+      </div>
+
+      <div class="nhsuk-panel">
+        <h2>Using the NHS: rights, costs, benefits and exemptions</h3>
+        <h3 class="nhsuk-u-margin-top-6 nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">[Placeholder]</a></h3>
+        <p>[Placeholder]</p>
+
+        <h3 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">[Placeholder]</a></h3>
+        <p>[Placeholder]</p>
+
+        <h3 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">[Placeholder]</a></h3>
+        <p>[Placeholder]</p>
+      </div>
+      
+
+      <div class="nhsuk-panel">
+        <h2>Contact an NHS organisation</h3>
+        <h3 class="nhsuk-u-margin-top-6 nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">[Placeholder]</a></h3>
+        <p>[Placeholder]</p>
+
+        <h3 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">[Placeholder]</a></h3>
+        <p>[Placeholder]</p>
+
+        <h3 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">[Placeholder]</a></h3>
+        <p>[Placeholder]</p>
+      </div>
+
+      <div class="nhsuk-panel">
+        <h2>Provide feedback or complain</h3>
+
+        <h3 class="nhsuk-u-margin-top-6 nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">[Placeholder]</a></h3>
+        <p>[Placeholder]</p>
+
+        <h3 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">[Placeholder]</a></h3>
+        <p>[Placeholder]</p>
+
+        <h3 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">[Placeholder]</a></h3>
+        <p>[Placeholder]</p>
+      </div>
+
+      <div class="nhsuk-panel">
+        <h2>Something about the NHS.UK website</h3>
+        <h3 class="nhsuk-u-margin-top-6 nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">[Placeholder]</a></h3>
+        <p>[Placeholder]</p>
+
+        <h3 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">[Placeholder]</a></h3>
+        <p>[Placeholder]</p>
+
+        <h3 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs"><a href="#">[Placeholder]</a></h3>
+        <p>[Placeholder]</p>
+      </div>
+
+
+
+
+    </div>
+  </div>
+{% endblock %}
