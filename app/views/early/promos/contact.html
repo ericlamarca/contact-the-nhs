@@ -1,0 +1,115 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ]
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+
+      <h1>
+        Contact the NHS
+      </h1>
+
+      <div class="nhsuk-promo">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Get help in an emergency or urgent situation</h3>
+            <p class="nhsuk-promo__description">[Placeholder, to update]</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="nhsuk-promo">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Get help with a medical problem</h3>
+            <p class="nhsuk-promo__description">[Placeholder, to update]</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="nhsuk-promo">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Book or change an appointment</h3>
+            <p class="nhsuk-promo__description">[Placeholder, to update]</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="nhsuk-promo">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Acccess medical records</h3>
+            <p class="nhsuk-promo__description">[Placeholder, to update]</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="nhsuk-promo">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Using the NHS: rights, costs, benefits and exemptions</h3>
+            <p class="nhsuk-promo__description">[Placeholder, to update]</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="nhsuk-promo">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Contact an NHS organisation</h3>
+            <p class="nhsuk-promo__description">[Placeholder, to update]</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="nhsuk-promo">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Provide feedback or complain</h3>
+            <p class="nhsuk-promo__description">[Placeholder, to update]</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="nhsuk-promo">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Something about the NHS.UK website</h3>
+            <p class="nhsuk-promo__description">[Placeholder, to update]</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}
