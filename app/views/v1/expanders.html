@@ -1,0 +1,164 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ]
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+
+      <h1>
+        Contact the NHS
+      </h1>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Get help in an emergency or urgent situation
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Placeholder</p>
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Questions about your health
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Placeholder</p>
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Appointments
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Placeholder</p>
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Find contact details for a local service
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Placeholder</p>
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Get information about your medical history / record
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Placeholder</p>
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Prescriptions
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Eligibility and costs</p>
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            EHIC
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Jobs</p>
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Contact details for health professionals
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Placeholder</p>
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Update organisation details (PIMS)
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Placeholder</p>
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Help improve the NHS website
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Placeholder</p>
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Press, FOI, syndicate content
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Placeholder</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+{% endblock %}
