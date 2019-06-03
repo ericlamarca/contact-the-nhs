@@ -1,0 +1,96 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ]
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <h1>Contact the NHS</h1>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-one-third browse-categories">
+          <ul>
+            <li class="browse-categories-first"><a href="/v2/browse/emergency">Emergency and urgent problems</a></li>
+            <li><a href="/v2/browse/questions-health">Questions about your health</a></li>
+            <li class="browse-categories-active"><a href="/v2/browse/appointments">Appointments</a></li>
+            <li><a href="/v2/browse/gp-dentist">GPs, Dentists, Hospitals</a></li>
+            <li><a href="/v2/browse/feedback">Give feedback about a service</a></li>
+            <li><a href="/v2/browse/records">Your medical record and NHS number</a></li>
+            <li><a href="/v2/browse/prescription">Prescription prepayment certificates</a></li>
+            <li><a href="/v2/browse/eligibility-costs">Eligibility and costs</a></li>
+            <li><a href="/v2/browse/ehic">EHIC (European Health Insurance Card)</a></li>
+            <li><a href="/v2/browse/improve-website">Help improve the website</a></li>
+            <li><a href="/v2/browse/professionals">Contacts for professionals</a></li>
+          </ul>
+        </div>
+
+        <div class="nhsuk-grid-column-two-thirds browse-content">
+
+          <h2>Appointments</h2>
+      
+          <h3 class="nhsuk-u-margin-top-8">If you need to see a GP</h3>
+
+          <p>You can call the phone number for your local GP surgery to book, change or cancel an appointment.</p>
+          <p>Many GP surgery's now have <a href="https://www.nhs.uk/using-the-nhs/nhs-services/gps/gp-online-services/">GP online services</a>, which also allow you to book, change or cancel your appointment.</p>
+          <p><a href="https://www.nhs.uk/Service-Search/GP/LocationSearch/4">Find your nearest GP surgery</a>
+          </p>
+
+
+          <h3 class="nhsuk-u-margin-top-8">If it's a hospital appointment</h3>
+          <p>If you've been referred by a GP for an appointment at hospital you should get a letter in the post. This letter will tell you when the appointment will be.</p>
+
+          <p>On the letter, there should be a phone number that you can call if you need to change or cancel your appointment.</p>
+
+          <p>If you cannot find your letter or do not have one search here to <a href="https://www.nhs.uk/service-search">find contact details for the hospital</a>.</p>
+
+
+          <h3 class="nhsuk-u-margin-top-8">e-Referral Service</h3>
+
+          <p>If you have been referred to a hospital or clinic through the NHS e-Referral Service you may be able to use this to book, change or cancel your appointment.</p>
+
+          <p>You'll get a letter in the post with instructions on how to how to login and use the NHS e-Referral Service.</p>
+
+          <p>Find out more about <a href="https://www.nhs.uk/using-the-nhs/nhs-services/hospitals/nhs-e-referral-service/">using the e-Referral Service</a>.</p>
+
+        </div>
+      
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}

@@ -1,0 +1,74 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ]
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <h1>Contact the NHS</h1>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-one-third browse-categories">
+          <ul>
+            <li class="browse-categories-first"><a href="/v2/browse/emergency">Emergency and urgent problems</a></li>
+            <li><a href="/v2/browse/questions-health">Questions about your health</a></li>
+            <li><a href="/v2/browse/appointments">Appointments</a></li>
+            <li><a href="/v2/browse/gp-dentist">GPs, Dentists, Hospitals</a></li>
+            <li><a href="/v2/browse/feedback">Give feedback about a service</a></li>
+            <li><a href="/v2/browse/records">Your medical record and NHS number</a></li>
+            <li><a href="/v2/browse/prescription">Prescription prepayment certificates</a></li>
+            <li><a href="/v2/browse/eligibility-costs">Eligibility and costs</a></li>
+            <li><a href="/v2/browse/ehic">EHIC (European Health Insurance Card)</a></li>
+            <li><a href="/v2/browse/improve-website">Help improve the website</a></li>
+            <li class="browse-categories-active"><a href="/v2/browse/professionals">Contacts for professionals</a></li>
+          </ul>
+        </div>
+
+        <div class="nhsuk-grid-column-two-thirds browse-content">
+
+          <h2>Contacts for professionals</h2>
+
+          <p>Placeholder.</p>
+
+        </div>
+      
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}
