@@ -25,19 +25,51 @@
     text-decoration: none;
 }
 
+// Remove visited style from list of links
+
+.browse-categories a:visited {
+    color: #005eb8;
+}
+
+// Remove hover from list of links
+
+.browse-categories li:hover {
+    background: #d8dde0;
+}
+
+.browse-categories a:hover {
+    background: none;
+    box-shadow: 0 0 0 0;
+}
+
+// Give border-top to the first element in the list
+
 .browse-categories-first {
     border-top: 1px solid #aeb7bd;
 }
 
-.browse-categories-active {
+
+// Make active box have a different background and text colour
+
+#browse-categories-active {
     background: #005eb8;
 }
 
-.browse-categories-active a {
+#browse-categories-active:hover {
+    background: #005eb8;
+}
+
+#browse-categories-active a {
     color: #ffffff;
 }
 
+.browse-categories-active a:visited {
+    color: #ffffff;
+}
+
+// Give some extra space to the main content (just for larger screens)
+
 .browse-content {
-    padding-left: 48px;
+    padding-left: 24px;
 }
     
