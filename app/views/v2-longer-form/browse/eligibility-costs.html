@@ -1,0 +1,96 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ]
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <h1>Contact the NHS</h1>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-one-third browse-categories">
+          <ul>
+            <li class="browse-categories-first nhsuk-body-s"><a href="/v2-longer-form/browse/emergency">Emergency and urgent problems</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-longer-form/browse/questions-health">Questions about your health</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-longer-form/browse/appointments">Appointments</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-longer-form/browse/gp-dentist">GPs, Dentists, Hospitals</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-longer-form/browse/feedback">Give feedback about a service</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-longer-form/browse/records">Your medical record and NHS number</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-longer-form/browse/prescription">Prescription prepayment certificates</a></li>
+            <li id="browse-categories-active" class="nhsuk-body-s"><a href="/v2-longer-form/browse/eligibility-costs">Eligibility and costs</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-longer-form/browse/ehic">EHIC (European Health Insurance Card)</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-longer-form/browse/improve-website">Help improve the website</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-longer-form/browse/professionals">Contacts for professionals</a></li>
+          </ul>
+        </div>
+
+        <div class="nhsuk-grid-column-two-thirds browse-content">
+
+          <h2>Eligibility and costs</h2>
+
+          <h3>Am I eligible for free NHS treatment?</h3>
+          <p>Although most NHS treatment is free, there's usually a charge for:</p>
+
+          <ul>
+            <li>NHS prescriptions</li>
+            <li>NHS dental check-ups and treatment</li>
+            <li>sight tests</li>
+            <li>new glasses or contact lenses</li>
+            <li>repairing or replacing glasses or contact lenses</li>
+            <li>NHS wigs</li>
+            <li>NHS fabric supports – things like surgical bras, support tights and spinal supports</li>
+            <li>travel for NHS treatment</li>
+          </ul>
+
+          <p>But you may be entitled to help with these costs depending on your circumstances.</p>
+
+          <p>Find out what you're entitled to using this <a href="https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start">eligibility checker</a></p>
+
+          <p>Or you can contact NHS England on:</p>
+          <ul>
+            <p><a href="mailto:england.contactus@nhs.net">england.contactus@nhs.net</a></p>
+            <p>0300 311 22 33</p>
+          </ul>
+
+        </div>
+      
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}

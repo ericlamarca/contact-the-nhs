@@ -1,0 +1,102 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ]
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <h1>Contact the NHS</h1>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-one-third browse-categories">
+          <ul>
+            <li class="browse-categories-first nhsuk-body-s"><a href="/v2-action-focused/browse/emergency">Emergency and urgent problems</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/questions-health">Questions about your health</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/appointments">Appointments</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/gp-dentist">GPs, Dentists, Hospitals</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/feedback">Give feedback about a service</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/records">Your medical record and NHS number</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/prescription">Prescription prepayment certificates</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/eligibility-costs">Eligibility and costs</a></li>
+            <li id="browse-categories-active" class="nhsuk-body-s"><a href="/v2-action-focused/browse/ehic">EHIC (European Health Insurance Card)</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/improve-website">Help improve the website</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/professionals">Contacts for professionals</a></li>
+          </ul>
+        </div>
+
+        <div class="nhsuk-grid-column-two-thirds browse-content">
+
+          <h2>EHIC (European Health Insurance Card)</h2>
+
+
+          <h3 class="nhsuk-u-margin-top-8">Get a European Health Insurance Card (EHIC)</h3>
+          <p>A valid European Health Insurance Card (EHIC) gives you the right to access state-provided healthcare during a temporary stay in another European Economic Area (EEA) country or Switzerland. </p>
+
+          <p><a href="https://www.ehic.org.uk/Internet/startApplication.do">Apply for an EHIC</a></p>
+
+          <p>You can also <a href="https://www.nhs.uk/using-the-nhs/healthcare-abroad/apply-for-a-free-ehic-european-health-insurance-card/">find out more about who can get an EHIC</a></p>
+
+
+          <h3 class="nhsuk-u-margin-top-8">Replacing a lost or stolen EHIC</h3>
+
+          <h4>If you're in the UK</h4>
+          <p>If you need to replace your EHIC while you're in the UK, call 0300 330 1350</p>
+
+          <h4>If you're abroad</h4>
+
+          <p>You'll need to get a Provisional Replacement Certificate instead.</p>
+
+          <p>Phone Overseas Healthcare Services on +44 191 218 1999, Monday to Friday, 8am to 5pm. If you need to request a PRC outside these hours, call as soon as you can the next working day.</p>
+
+          <p>When calling for a PRC, you'll need to provide your:</p>
+          <ul>
+            <li>National Insurance number</li>
+            <li>name </li>
+            <li>address</li>
+            <li>date of birth</li>
+            <li>NHS number, if possible</li>
+            <li>the email address or fax number for the specific department of the hospital or service where you're receiving treatment</li>
+          </ul>
+
+        </div>
+      
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}

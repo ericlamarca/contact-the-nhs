@@ -1,0 +1,76 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ]
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <h1>Contacts for professionals</h1>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-one-third browse-categories">
+          <ul>
+            <li class="browse-categories-first nhsuk-body-s" id="browse-categories-active"><a href="/v2-action-focused/browse/professionals/health-professionals">Contact details for health professionals</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/professionals/pims">Update organisation details (PIMS)</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/professionals/improve-website">Help improve the website</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/professionals/press-foi">Press / FOI / Syndicate content</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/professionals/public">Contacts for the public</a></li>
+          </ul>
+        </div>
+
+        <div class="nhsuk-grid-column-two-thirds browse-content">
+
+          <h2>Contact details for health professionals</h2>
+
+          <h3 class="nhsuk-u-margin-top-8">How to contact the NHS England Safeguarding team</h3>
+          <p>NHS England Safeguarding team is working together to help protect children, young people and adults in all communities.</p>
+          <p>To contact us, please email the safeguarding team on <a href="">england.safeguarding@nhs.net</a> or write to us at:</p>
+          <p>Nursing Directorate, NHS England<br>
+          5th Floor (5W33), Quarry House<br>
+          Quarry Hill, Leeds<br>
+          LS2 7UE</p>
+
+          <p>You can also follow our work on <a href="">Twitter</a> to keep up-to-date with all the latest, relevant news and information we are working and involved with at NHS England Safeguarding.</p>
+
+        </div>
+      
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}

@@ -1,0 +1,97 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ]
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <h1>Contact the NHS</h1>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-one-third browse-categories">
+          <ul>
+            <li class="browse-categories-first nhsuk-body-s"><a href="/v2-action-focused/\browse/emergency">Emergency and urgent problems</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/\browse/questions-health">Questions about your health</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/\browse/appointments">Appointments</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/gp-dentist">GPs, Dentists, Hospitals</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/feedback">Give feedback about a service</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/records">Your medical record and NHS number</a></li>
+            <li id="browse-categories-active" class="nhsuk-body-s"><a href="/v2-action-focused/browse/prescription">Prescription prepayment certificates</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/eligibility-costs">Eligibility and costs</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/ehic">EHIC (European Health Insurance Card)</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/improve-website">Help improve the website</a></li>
+            <li class="nhsuk-body-s"><a href="/v2-action-focused/browse/professionals">Contacts for professionals</a></li>
+          </ul>
+        </div>
+
+        <div class="nhsuk-grid-column-two-thirds browse-content">
+
+          <h2>Prescription prepayment certificates</h2>
+
+          <h3>Buy a prescription prepayment certificate</h3>
+
+          <p>Buying a prepayment certificates can help you save money if you need to get repeat prescriptions.</p>
+
+          <p>A one off prescription costs £9 each time, but prepaying for an unlimited number of prescriptions is:</p>
+
+          <ul>
+            <li>£29.10 for 3 months</li>
+            <li>£104 for 12 months (or 10 Direct Debit installments of £10.40)</li>
+          </ul>
+
+          <p>You can <a href="https://apps.nhsbsa.nhs.uk/ppc-online/patient.do">find out how they work and buy one online</a>.</p>
+
+
+          <h4>Get a replacement certificate or update your details</h4>
+
+          <p>Call 0300 330 1341:</p>
+          <ul>
+            <li>open 8am to 6pm Monday to Friday</li>
+            <li>9am to 3pm on Saturday</li>
+          </ul>
+
+          <p>Or use the <a href="https://contactcentreservices.nhsbsa.nhs.uk/nhsuk/dispatch/0/0X28970b39-41f7-4deb-a95e-881a2a7b3d47/0/?lang=en_GB&Screen=NHSBSA_ContactForm">online contact from</a>.</p>
+
+
+        </div>
+      
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}
