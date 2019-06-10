@@ -1,0 +1,81 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ],
+  href: "/v3/browse",
+  text: "Contact the NHS"
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-one-third browse-categories">
+          <ul>
+            <li class="browse-categories-first nhsuk-body-s"><a href="/v3/browse/emergency">Emergency and urgent problems</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/questions-health">Questions about your health</a></li>
+            <li id="browse-categories-active" class="nhsuk-body-s"><a href="/v3/browse/appointments">Appointments</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/gp-dentist">GPs, Dentists, Hospitals</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/feedback">Give feedback about a service</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/records">Your medical record and NHS number</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/prescription">Prescription prepayment certificates</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/eligibility-costs">Eligibility and costs</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/ehic">EHIC (European Health Insurance Card)</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/improve-website">Help improve the website</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/professionals">Contacts for professionals</a></li>
+          </ul>
+        </div>
+
+        <div class="nhsuk-grid-column-two-thirds browse-content">
+
+          <h1>Appointments</h1>
+      
+          <h2>Book, change or cancel a GP appointment</h2>
+
+          <ul>
+            <li><a href="https://www.nhs.uk/Service-Search/GP/LocationSearch/4">Get in touch with your GP</a> using their phone number or online services. 
+            </li>
+          </ul>
+
+          <h2>Book, change or cancel a hospital appointment</h2>
+          <ul>
+          <li><a href="https://www.nhs.uk/service-search">Contact your hospital</a> by finding their contact details.</ili>
+          <li>Or <a href="https://www.nhs.uk/using-the-nhs/nhs-services/hospitals/nhs-e-referral-service/">Use the e-Referral service</a> if [what?]</li>
+          </ul>
+
+        </div>
+      
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}

@@ -1,0 +1,103 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ]
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <h1>Contact the NHS</h1>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-one-third browse-categories">
+          <ul>
+            <li class="browse-categories-first nhsuk-body-s"><a href="/v3/browse/emergency">Emergency and urgent problems</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/questions-health">Questions about your health</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/appointments">Appointments</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/gp-dentist">GPs, Dentists, Hospitals</a></li>
+            <li id="browse-categories-active" class="nhsuk-body-s"><a href="/v3/browse/feedback">Give feedback about a service</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/records">Your medical record and NHS number</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/prescription">Prescription prepayment certificates</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/eligibility-costs">Eligibility and costs</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/ehic">EHIC (European Health Insurance Card)</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/improve-website">Help improve the website</a></li>
+            <li class="nhsuk-body-s"><a href="/v3/browse/professionals">Contacts for professionals</a></li>
+          </ul>
+        </div>
+
+        <div class="nhsuk-grid-column-two-thirds browse-content">
+
+          <h2>Feedback and complaints</h2>
+
+          <h3>Give feedback about a service</h3>
+          <ul>
+            <li>speak to a member of staff at the place you went to, such as a GP surgery or hospital</li>
+            <li>give a rating or review – <a href="https://www.nhs.uk/service-search">find the place you went to</a> to leave feedback</li>
+          </ul>
+
+          <h3>Make a complaint about an NHS service</h3>
+          <p><a href="https://www.england.nhs.uk/contact-us/complaint/complaining-to-nhse/">Contact NHS England</a> if your complaint is about:</p>
+
+          <ul>
+            <li>a GP surgery</li>
+            <li>an NHS dentist</li>
+            <li>an NHS optician</li>
+            <li>a pharmacy</li>
+            <li>NHS 111</li>
+          </ul>
+
+          <p><a href="https://www.nhs.uk/Service-Search/Clinical%20Commissioning%20Group/LocationSearch/1">Contact your local CCG</a> if your complaint is about:</p>
+
+          <ul>
+            <li>hospital care</li>
+            <li>mental health services</li>
+            <li>out of hours services</li>
+            <li>community services such as district nursing</li>
+          </ul>
+
+          <div class="nhsuk-inset-text">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <p>You can speak to the <a href="/Service-Search/Patient-advice-and-liaison-services-(PALS)/LocationSearch/363">Patient Advice and Liaison service (PALS)</a> for advice if your complaint is about care you received in hospital.</p>
+          </div>
+
+        </div>
+      
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}

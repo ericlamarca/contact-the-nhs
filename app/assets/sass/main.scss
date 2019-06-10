@@ -68,3 +68,31 @@
     color: #ffffff;
 }
 
+// Hide categories on mobile (except index page)
+
+@media only screen and (max-width: 641px) {
+    .browse-categories {
+      display: none;
+    }
+  }
+
+// !!! Add for it not to happen in index page
+
+
+
+
+// NHS.UK heading with span
+
+.nhsuk-page-heading__small {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.nhsuk-page-heading__small {
+    color: #425563;
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 8px;
+}
