@@ -1,0 +1,195 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ]
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <h1>
+        Contact the NHS
+      </h1>
+
+
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-one-third">
+
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Emergency and urgent problems</h3>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="nhsuk-grid-column-one-third">
+
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Questions about your health</h3>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="nhsuk-grid-column-one-third">
+
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Appointments</h3>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      
+      </div>
+
+
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-one-third">
+
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">GPs, Dentists, Hospitals</h3>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="nhsuk-grid-column-one-third">
+
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Give feedback about a service</h3>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="nhsuk-grid-column-one-third">
+
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Your medical record and NHS number</h3>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      
+      </div>
+
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-one-third">
+
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Prescription prepayment certificates</h3>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="nhsuk-grid-column-one-third">
+
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Eligibility and costs</h3>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="nhsuk-grid-column-one-third">
+
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">EHIC (European Health Insurance Card)</h3>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      
+      </div>
+
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-one-third">
+
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Help improve the website</h3>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="nhsuk-grid-column-one-third">
+
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Contacts for professionals</h3>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      
+      </div>
+
+
+     
+
+    </div>
+  </div>
+{% endblock %}
