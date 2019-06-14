@@ -24,7 +24,7 @@
       text: "Home"
     }
   ],
-  href: "/v3/browse",
+  href: "/v3/links-and-separate-pages",
   text: "Contact the NHS"
 }) }}
 {% endblock %}
@@ -33,83 +33,51 @@
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
   <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
-      <h1>Contact the NHS</h1>
-    </div>
-  </div>
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1>Give feedback or make a complaint</h1>
 
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
+      <h3 class="nhsuk-heading-s">How to give feedback about an NHS service</h3>
+      <p>You can give feedback about any NHS care, treatment or service by:</p>
+      <ul>
+        <li>speaking to a member of staff at the place you went to, such as a GP surgery or hospital</li>
+        <li>give a rating or review – <a href="https://www.nhs.uk/service-search">find the place you went to</a> to leave feedback</li>
+      </ul>
 
-      <div class="nhsuk-grid-row">
+      <h3 class="nhsuk-heading-s nhsuk-u-margin-top-8">How to make a complaint about an NHS service</h3>
 
-        <div class="nhsuk-grid-column-one-third browse-categories">
-          <ul>
-            <li class="browse-categories-first nhsuk-body-s"><a href="/v3/browse/emergency">Emergency and urgent problems</a></li>
-            <li class="nhsuk-body-s"><a href="/v3/browse/questions-health">Questions about your health</a></li>
-            <li class="nhsuk-body-s"><a href="/v3/browse/appointments">Appointments</a></li>
-            <li class="nhsuk-body-s"><a href="/v3/browse/gp-dentist">GPs, Dentists, Hospitals</a></li>
-            <li id="browse-categories-active" class="nhsuk-body-s"><a href="/v3/browse/feedback">Give feedback about a service</a></li>
-            <li class="nhsuk-body-s"><a href="/v3/browse/records">Your medical record and NHS number</a></li>
-            <li class="nhsuk-body-s"><a href="/v3/browse/prescription">Prescription prepayment certificates</a></li>
-            <li class="nhsuk-body-s"><a href="/v3/browse/eligibility-costs">Eligibility and costs</a></li>
-            <li class="nhsuk-body-s"><a href="/v3/browse/ehic">EHIC (European Health Insurance Card)</a></li>
-            <li class="nhsuk-body-s"><a href="/v3/browse/improve-website">Help improve the website</a></li>
-            <li class="nhsuk-body-s"><a href="/v3/browse/professionals">Contacts for professionals</a></li>
-          </ul>
-        </div>
+      <p>You can complain to:</p>
 
-        <div class="nhsuk-grid-column-two-thirds browse-content">
+      <ul>
+        <li>a member of staff at the place you went to, such as a GP surgery or hospital</li>
+        <li>the organisation in charge of the place you went to – for example, this might be NHS England or your local clinical commissioning group (CCG)</li>
+      </ul>
 
-          <h2>Give feedback about a service</h2>
+      <p><a href="https://www.england.nhs.uk/contact-us/complaint/complaining-to-nhse/">Contact NHS England</a> if your complaint is about:</p>
 
-          <h3>How to give feedback about an NHS service</h3>
-          <p>You can give feedback about any NHS care, treatment or service by:</p>
-          <ul>
-            <li>speaking to a member of staff at the place you went to, such as a GP surgery or hospital</li>
-            <li>give a rating or review – <a href="https://www.nhs.uk/service-search">find the place you went to</a> to leave feedback</li>
-          </ul>
+      <ul>
+        <li>a GP surgery</li>
+        <li>an NHS dentist</li>
+        <li>an NHS optician</li>
+        <li>a pharmacy</li>
+        <li>NHS 111</li>
+      </ul>
 
-          <h3>How to make a complaint about an NHS service</h3>
+      <p><a href="https://www.nhs.uk/Service-Search/Clinical%20Commissioning%20Group/LocationSearch/1">Contact your local CCG</a> if your complaint is about:</p>
 
-          <p>You can make a complaint about any NHS care, treatment or service by complaining to:</p>
+      <ul>
+        <li>hospital care</li>
+        <li>mental health services</li>
+        <li>out of hours services</li>
+        <li>community services such as district nursing</li>
+      </ul>
 
-          <ul>
-            <li>a member of staff at the place you went to, such as a GP surgery or hospital</li>
-            <li>the organisation in charge of the place you went to – for example, this might be NHS England or your local clinical commissioning group (CCG)</li>
-          </ul>
+      <h3 class="nhsuk-heading-s nhsuk-u-margin-top-8">Give feedback about the website</h3>
+      <p>You can contact the NHS website team with questions and feedback about the website.</p>
 
+      <p>Get in touch using our <a href="https://www.nhs.uk/contact-us/nhs-website-contact-us">online form</a> to leave feedback.</p>
 
-          <p><a href="https://www.england.nhs.uk/contact-us/complaint/complaining-to-nhse/">Contact NHS England</a> if your complaint is about:</p>
-
-          <ul>
-            <li>a GP surgery</li>
-            <li>an NHS dentist</li>
-            <li>an NHS optician</li>
-            <li>a pharmacy</li>
-            <li>NHS 111</li>
-          </ul>
-
-          <p><a href="https://www.nhs.uk/Service-Search/Clinical%20Commissioning%20Group/LocationSearch/1">Contact your local CCG</a> if your complaint is about:</p>
-
-          <ul>
-            <li>hospital care</li>
-            <li>mental health services</li>
-            <li>out of hours services</li>
-            <li>community services such as district nursing</li>
-          </ul>
-
-          <h3>For help with the complaints process</h3>
-          <p>You can speak to the <a href="/Service-Search/Patient-advice-and-liaison-services-(PALS)/LocationSearch/363">Patient Advice and Liaison service (PALS)</a> for advice if your complaint is about care you received in hospital.</p>
-
-          <p>Go to the NHS England website for <a href="https://www.england.nhs.uk/contact-us/complaint/">more information on how to make a complaint</a>.
-
-        </div>
-      
-      </div>
 
     </div>
-
   </div>
 
 {% endblock %}
