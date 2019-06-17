@@ -17,14 +17,10 @@
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
-{{ breadcrumb({
-  items: [
-    {
-      href: "/",
-      text: "Home"
-    }
-  ]
-}) }}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->

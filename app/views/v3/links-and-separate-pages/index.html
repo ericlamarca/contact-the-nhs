@@ -17,14 +17,10 @@
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
-{{ breadcrumb({
-  items: [
-    {
-      href: "/",
-      text: "Home"
-    }
-  ]
-}) }}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
@@ -39,7 +35,7 @@
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
      
-          <div class="nhsuk-promo">
+          <div class="nhsuk-promo nhsuk-u-margin-bottom-5">
             <a class="nhsuk-promo__link-wrapper" href="/v3/links-and-separate-pages/emergency">
               <div class="nhsuk-promo__content">
                 <h3 class="nhsuk-promo__heading">Emergency and urgent problems</h3>
@@ -47,7 +43,7 @@
             </a>
           </div>
 
-          <div class="nhsuk-promo">
+          <div class="nhsuk-promo nhsuk-u-margin-bottom-5">
             <a class="nhsuk-promo__link-wrapper" href="/v3/links-and-separate-pages/questions-health">
               <div class="nhsuk-promo__content">
                 <h3 class="nhsuk-promo__heading">Speak to someone about your health</h3>
@@ -55,7 +51,7 @@
             </a>
           </div>    
 
-          <div class="nhsuk-promo">
+          <div class="nhsuk-promo nhsuk-u-margin-bottom-5">
             <a class="nhsuk-promo__link-wrapper" href="/v3/links-and-separate-pages/appointments">
               <div class="nhsuk-promo__content">
                 <h3 class="nhsuk-promo__heading">Book, cancel or change an appointment</h3>
@@ -63,7 +59,7 @@
             </a>
           </div>
 
-          <div class="nhsuk-promo">
+          <div class="nhsuk-promo nhsuk-u-margin-bottom-5">
             <a class="nhsuk-promo__link-wrapper" href="/v3/links-and-separate-pages/services">
               <div class="nhsuk-promo__content">
                 <h3 class="nhsuk-promo__heading">Find contact details for GPs, hospitals and other services</h3>
@@ -71,7 +67,7 @@
             </a>
           </div>
 
-          <div class="nhsuk-promo">
+          <div class="nhsuk-promo nhsuk-u-margin-bottom-5">
             <a class="nhsuk-promo__link-wrapper" href="/v3/links-and-separate-pages/feedback">
               <div class="nhsuk-promo__content">
                 <h3 class="nhsuk-promo__heading">Give feedback or make a complaint</h3>
@@ -79,7 +75,7 @@
             </a>
           </div>
 
-          <div class="nhsuk-promo">
+          <div class="nhsuk-promo nhsuk-u-margin-bottom-5">
             <a class="nhsuk-promo__link-wrapper" href="/v3/links-and-separate-pages/something-else">
               <div class="nhsuk-promo__content">
                 <h3 class="nhsuk-promo__heading">Get help with something else</h3>
