@@ -1,0 +1,113 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <h1>Contact the NHS</h1>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="/v3/links-and-separate-pages/emergency">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Emergency and urgent problems</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="/v3/links-and-separate-pages/questions-health">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Speak to someone about your health</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="/v3/links-and-separate-pages/appointments">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Book, cancel or change an appointment</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="/v3/links-and-separate-pages/services">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Find contact details for GPs, hospitals and other services</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="/v3/links-and-separate-pages/feedback">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Give feedback or make a complaint</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="/v3/links-and-separate-pages/something-else">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Get help with something else</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="nhsuk-row">
+        <h2 class="nhsuk-heading-m nhsuk-u-margin-top-6">Contacts for professionals</h2>
+        <p>Example, example and another example.</p>
+        <p><a href="#">Contacts for professionals</a></p>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

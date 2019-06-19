@@ -1,0 +1,83 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ],
+  href: "/v3/links-and-separate-pages",
+  text: "Contact the NHS"
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1>Give feedback or make a complaint</h1>
+
+      <h3 class="nhsuk-heading-s">How to give feedback about an NHS service</h3>
+      <p>You can give feedback about any NHS care, treatment or service by:</p>
+      <ul>
+        <li>speaking to a member of staff at the place you went to, such as a GP surgery or hospital</li>
+        <li>give a rating or review – <a href="https://www.nhs.uk/service-search">find the place you went to</a> to leave feedback</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-s nhsuk-u-margin-top-8">How to make a complaint about an NHS service</h3>
+
+      <p>You can complain to:</p>
+
+      <ul>
+        <li>a member of staff at the place you went to, such as a GP surgery or hospital</li>
+        <li>the organisation in charge of the place you went to – for example, this might be NHS England or your local clinical commissioning group (CCG)</li>
+      </ul>
+
+      <p><a href="https://www.england.nhs.uk/contact-us/complaint/complaining-to-nhse/">Contact NHS England</a> if your complaint is about:</p>
+
+      <ul>
+        <li>a GP surgery</li>
+        <li>an NHS dentist</li>
+        <li>an NHS optician</li>
+        <li>a pharmacy</li>
+        <li>NHS 111</li>
+      </ul>
+
+      <p><a href="https://www.nhs.uk/Service-Search/Clinical%20Commissioning%20Group/LocationSearch/1">Contact your local CCG</a> if your complaint is about:</p>
+
+      <ul>
+        <li>hospital care</li>
+        <li>mental health services</li>
+        <li>out of hours services</li>
+        <li>community services such as district nursing</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-s nhsuk-u-margin-top-8">Give feedback about the website</h3>
+      <p>You can contact the NHS website team with questions and feedback about the website.</p>
+
+      <p>Get in touch using our <a href="https://www.nhs.uk/contact-us/nhs-website-contact-us">online form</a> to leave feedback.</p>
+
+
+    </div>
+  </div>
+
+{% endblock %}
