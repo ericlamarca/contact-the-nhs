@@ -23,44 +23,33 @@
       href: "/",
       text: "Home"
     }
-  ]
+  ],
+  href: "/v4/promos/professionals/index",
+  text: "Contact for professionals"
 }) }}
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
-      <h1>Contacts for professionals</h1>
-    </div>
-  </div>
 
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-full">
 
       <div class="nhsuk-grid-row">
 
-        <div class="nhsuk-grid-column-one-third browse-categories">
-          <ul>
-            <li class="browse-categories-first nhsuk-body-s"><a href="/v3/browse/professionals/health-professionals">Contact details for health professionals</a></li>
-            <li id="browse-categories-active" class="nhsuk-body-s"><a href="/v3/browse/professionals/pims">Update organisation details (PIMS)</a></li>
-            <li class="nhsuk-body-s"><a href="/v3/browse/professionals/improve-website">Help improve the website</a></li>
-            <li class="nhsuk-body-s"><a href="/v3/browse/professionals/press-foi">Press / FOI / Syndicate content</a></li>
-            <li class="nhsuk-body-s"><a href="/v3/browse/professionals/public">Contacts for the public</a></li>
-          </ul>
-        </div>
-
         <div class="nhsuk-grid-column-two-thirds browse-content">
 
-          <h2>Update organisation details (PIMS)</h2>
+          <h1>Update organisation details (PIMS)</h1>
 
-          <h3 class="nhsuk-u-margin-top-8">Contact us about your organisation's profile on the NHS website</h3>
           <p>You can contact the NHS website if you have a query about your organisation profile.</p>
+
+          <h3 class="nhsuk-heading-s">Reset your password</h3>
           <p>If you're having trouble logging in and need to reset your password, you can reset this yourself.</p>
           <p><a href="https://www.nhs.uk/Personalisation/ResetPassword.aspx">To reset your password click here</a></p>
 
-          <p>Or get in touch using <a href="https://www.nhs.uk/contact-us/nhs-website-profile-feedback">our online form</a> if you need help with:</p>
+          <h3 class="nhsuk-heading-s">If you need help</h3>
+          <p>If you need help with:</p>
           <ul>
             <li>logging in or creating an account</li>
             <li>editing a profile</li>
@@ -70,12 +59,13 @@
             <li>anything else</li>
           </ul>
 
+          <p><a href="https://www.nhs.uk/contact-us/nhs-website-profile-feedback">Get in touch using our online form</a></p>
+
         </div>
       
       </div>
 
     </div>
-
   </div>
 
 {% endblock %}
