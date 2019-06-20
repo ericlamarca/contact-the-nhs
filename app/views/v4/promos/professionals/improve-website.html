@@ -17,16 +17,16 @@
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
-{{ breadcrumb({
-  items: [
-    {
-      href: "/",
-      text: "Home"
-    }
-  ],
-  href: "/v4/promos/professionals/index",
-  text: "Contact for professionals"
-}) }}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4/promos">Contact the NHS</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4/promos/professionals/index">Contacts for professionals</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v4/promos/professionals/index">Back to Contacts for professionals</a></p>
+  </div>
+</nav>
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->

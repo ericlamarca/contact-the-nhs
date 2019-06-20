@@ -17,10 +17,16 @@
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
-  {{ breadcrumb({
-    href: "/",
-    text: "Home"
-  }) }}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ],
+  href: "/v4/promos",
+  text: "Contact the NHS"
+}) }}
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
@@ -75,14 +81,8 @@
             </a>
           </div>
 
-          <div class="nhsuk-promo nhsuk-u-margin-bottom-5">
-            <a class="nhsuk-promo__link-wrapper" href="/v4/promos/">
-              <div class="nhsuk-promo__content">
-                <h3 class="nhsuk-promo__heading">Contacts for the public</h3>
-              </div>
-            </a>
-          </div>
-
+          <hr>
+          <p>Or view <a href="/v4/promos/">contacts for the public</a></p>
 
     </div>
   </div>
