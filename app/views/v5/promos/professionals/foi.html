@@ -1,0 +1,74 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/promos/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/promos">Contact the NHS</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/promos/professionals/index">Contacts for professionals</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v5/promos/professionals/index">Back to Contacts for professionals</a></p>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-two-thirds">
+
+          <h1>Make a freedom of information request</h1>
+
+          <p>Freedom of Information (FOI) requests must be made in writing by post, fax or email.</p>
+
+          <h2 class="nhsuk-body-m nhsuk-u-margin-bottom-2">Email</h2>
+          <p><a href="enquiries@nhsdigital.nhs.uk">enquiries@nhsdigital.nhs.uk</a></p>
+
+          <h2 class="nhsuk-body-m nhsuk-u-margin-bottom-2">Post</h2>
+          <p>Information Governance Compliance Team<br>
+          NHS Digital<br> 
+          1 Trevelyan Square<br> 
+          Boar Lane<br>
+          Leeds<br>
+          LS1 6AE</p>
+
+          <h2 class="nhsuk-body-m">What you need to provide</h2>
+          <ul>
+            <li>your name </li>
+            <li>an address for correspondence (email or postal) </li>
+            <li>details of the information you want</li>
+          </ul>
+
+          <p>Visit our dedicated <a href="https://www.nhs.uk/contact-us/freedom-of-information-foi-requests/">FOI section</a> for more information.</p>
+
+        </div>
+      
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

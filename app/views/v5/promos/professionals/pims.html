@@ -1,0 +1,71 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/promos/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/promos">Contact the NHS</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/promos/professionals/index">Contacts for professionals</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v5/promos/professionals/index">Back to Contacts for professionals</a></p>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-two-thirds">
+
+          <h1>Help updating your organisation profile (PIMS)</h1>
+
+          <p>You can use the <a href="https://www.nhs.uk/personalisation/login.aspx">profile editor</a> to update your NHS organisation profile on NHS.UK.</p>
+
+          <h3 class="nhsuk-heading-s">Reset your password</h3>
+          <p>But if you're having trouble logging in and need to reset your password, you can reset this yourself.</p>
+          <p><a href="https://www.nhs.uk/Personalisation/ResetPassword.aspx">To reset your password click here</a></p>
+
+          <h3 class="nhsuk-heading-s">If you need help</h3>
+          <p>If you need help with:</p>
+          <ul>
+            <li>logging in or creating an account</li>
+            <li>editing a profile</li>
+            <li>rights and permissions</li>
+            <li>responding to a comment</li>
+            <li>uploading assets</li>
+            <li>anything else</li>
+          </ul>
+
+          <p><a href="https://www.nhs.uk/contact-us/nhs-website-profile-feedback">Get in touch using our online form</a></p>
+
+        </div>
+      
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

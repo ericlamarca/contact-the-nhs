@@ -1,0 +1,79 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ],
+  href: "/v5/promos",
+  text: "Contact the NHS"
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1>Give feedback or make a complaint</h1>
+
+      <h3 class="nhsuk-heading-s">Give feedback about the website</h3>
+      <p>You can contact the NHS website team with questions and feedback about the website.</p>
+
+      <p>Get in touch using our <a href="https://www.nhs.uk/contact-us/nhs-website-contact-us">online form</a> to leave feedback.</p>
+      
+
+      <h3 class="nhsuk-heading-s nhsuk-u-margin-top-6">Give feedback about an NHS service</h3>
+      <p>You can give feedback by speaking to a member of staff at the NHS hospital, GP surgery, dentist, opticians or pharmacy you went to.</p>
+      <p>Or you can leave a rating or review on their profile page on nhs.uk.</p>
+      <p><a href="https://www.nhs.uk/service-search">Find an NHS service</a></p>
+      </ul>
+
+      <h3 class="nhsuk-heading-s nhsuk-u-margin-top-6">Make a complaint about an NHS service</h3>
+
+      <p>You can complain to a member of staff at the NHS service you went to, such as a GP surgery or hospital.</p>
+      <p>Or you can complain to the organisation in charge.</p>
+
+      <p><a href="https://www.england.nhs.uk/contact-us/complaint/complaining-to-nhse/">Contact NHS England</a> if your complaint is about:</p>
+
+      <ul>
+        <li>a GP surgery</li>
+        <li>an NHS dentist</li>
+        <li>an NHS optician</li>
+        <li>a pharmacy</li>
+        <li>NHS 111</li>
+      </ul>
+
+      <p><a href="https://www.nhs.uk/Service-Search/Clinical%20Commissioning%20Group/LocationSearch/1">Contact the local organisation in charge (CCG)</a> if your complaint is about:</p>
+
+      <ul>
+        <li>hospital care</li>
+        <li>mental health services</li>
+        <li>out of hours services</li>
+        <li>community services such as district nursing</li>
+      </ul>
+
+
+    </div>
+  </div>
+
+{% endblock %}

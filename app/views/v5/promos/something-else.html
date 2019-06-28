@@ -1,0 +1,161 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/",
+      text: "Home"
+    }
+  ],
+  href: "/v5/promos",
+  text: "Contact the NHS"
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1>Get help with something else</h1>
+
+      <div class="nhsuk-expander-group">
+
+          <details class="nhsuk-details nhsuk-expander">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+                Medical records
+              </span>
+            </summary>
+            <div class="nhsuk-details__text">
+          
+              <p>You can see your GP records by:<p>
+
+              <ul>
+                <li>asking for them at your GP surgery</li>
+                <li>going online to see them (if you’ve signed up for online appointment booking or repeat prescriptions)</li>
+              </ul>
+
+              <p>Find out <a href="https://www.nhs.uk/using-the-nhs/nhs-services/gps/gp-online-services/">how to sign up for GP online services</a>.</p>
+
+              </ul>
+
+            </div>
+          </details>
+
+          <details class="nhsuk-details nhsuk-expander">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+                How to find your NHS number
+              </span>
+            </summary>
+            <div class="nhsuk-details__text">
+
+              <p>You can find your NHS number on any letters you’ve had from the NHS.</p>
+
+              <p>Check any:</p>
+              <ul>
+                <li>prescriptions</li>
+                <li>test results</li>
+                <li>hospital referral letters</li>
+                <li>appointment letters</li>
+              </ul>
+
+              <h3 class="nhsuk-heading-xs">If you cannot find your NHS number</h3>
+
+              <p>Ask at your GP surgery if you cannot find your NHS number.</p>
+
+              <p><a href="https://www.nhs.uk/Service-Search/GP/LocationSearch/4">Find a local GP surgery</a> to register with.</a></p>
+
+            </div>
+          </details>
+
+          <details class="nhsuk-details nhsuk-expander">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+                EHIC (European Health Insurance Card)
+              </span>
+            </summary>
+            <div class="nhsuk-details__text">
+
+              <p><a href="https://www.ehic.org.uk/Internet/startApplication.do">Apply for an EHIC</a></p>
+
+              <h4 class="nhsuk-heading-xs">Replacing a lost or stolen EHIC</h3>
+              <p>If you're in the UK:</p>
+              <ul>
+                <li>call 0300 330 1350</li>
+              </ul>
+
+              <p>If you're abroad:</p>
+              <ul>
+                <li>call +44 191 218 1999, Monday to Friday, 8am to 5pm</li>
+              </ul>
+
+            </div>
+          </details>
+
+
+          <details class="nhsuk-details nhsuk-expander">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+                Prescription prepayment certificates
+              </span>
+            </summary>
+            <div class="nhsuk-details__text">
+
+              <p>Find out how they work and <a href="https://apps.nhsbsa.nhs.uk/ppc-online/patient.do">buy one online</a>.</p>
+
+              <h3 class="nhsuk-heading-xs">Get a replacement certificate or update your details</h3>
+
+              <p>Call 0300 330 1341:</p>
+
+              <ul>
+                <li>open 8am to 6pm Monday to Friday</li>
+                <li>9am to 3pm on Saturday</li>
+              </ul>
+
+              <p>Or use the <a href="https://contactcentreservices.nhsbsa.nhs.uk/nhsuk/dispatch/0/0X28970b39-41f7-4deb-a95e-881a2a7b3d47/0/?lang=en_GB&Screen=NHSBSA_ContactForm">online contact from</a>.</p> 
+              </div>
+
+            </div>
+          </details>
+
+          <details class="nhsuk-details nhsuk-expander">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+                Accessing NHS services if you're visiting or moving to England
+              </span>
+            </summary>
+            <div class="nhsuk-details__text">
+
+              <p>If you're visiting or moving to England you can have treatment on the NHS. But you may be charged, and this can vary depending on where you're from.</p>
+
+              <p>Read more about <a href="https://www.nhs.uk/using-the-nhs/nhs-services/visiting-or-moving-to-england/">healthcare if you're planning to visit or move to England</a>.</p>
+
+              </div>
+
+            </div>
+          </details>
+
+        </div>
+
+  </div>
+
+{% endblock %}

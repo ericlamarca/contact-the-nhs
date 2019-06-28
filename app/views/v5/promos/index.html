@@ -1,0 +1,84 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact the NHS prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <h1>Contact the NHS</h1>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+     
+          <div class="nhsuk-promo nhsuk-u-margin-bottom-5">
+            <a class="nhsuk-promo__link-wrapper" href="/v5/promos/get-medical-help">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Get medical help</h3>
+              </div>
+            </a>
+          </div> 
+
+          <div class="nhsuk-promo nhsuk-u-margin-bottom-5">
+            <a class="nhsuk-promo__link-wrapper" href="/v5/promos/appointments">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Book, cancel or change an appointment</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="nhsuk-promo nhsuk-u-margin-bottom-5">
+            <a class="nhsuk-promo__link-wrapper" href="/v5/promos/services">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Find contact details for GPs, hospitals and other services</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="nhsuk-promo nhsuk-u-margin-bottom-5">
+            <a class="nhsuk-promo__link-wrapper" href="/v5/promos/feedback">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Give feedback or make a complaint</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="nhsuk-promo nhsuk-u-margin-bottom-5">
+            <a class="nhsuk-promo__link-wrapper" href="/v5/promos/something-else">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Get help with something else</h3>
+              </div>
+            </a>
+          </div>
+
+          <hr>
+          <p>Or view <a href="/v5/promos/professionals/index">contacts for professionals</a></p>
+
+    </div>
+  </div>
+
+{% endblock %}
